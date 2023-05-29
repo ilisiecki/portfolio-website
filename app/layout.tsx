@@ -20,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} font-inter`}>
+      <body className={`${inter.variable} font-inter dark:bg-main-background`}>
         <Providers>
           <Header />
           {children}

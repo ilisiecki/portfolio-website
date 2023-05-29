@@ -12,6 +12,11 @@ module.exports = {
         main: {
           primary: "#000000",
           secondary: "#000000",
+          background: "#262626",
+          icon: "#262626",
+          iconDark: "white",
+          iconHover: "#737373",
+          iconHoverDark: "#a3a3a3",
         },
       },
       fontFamily: {
