@@ -20,8 +20,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} font-inter dark:bg-main-background`}>
+      <body className={`${inter.variable} font-inter dark:bg-white`}>
         <Providers>
+          <div
+            id="background"
+            className="fixed -z-50 h-screen w-full bg-main-background opacity-0 transition-opacity duration-700 dark:opacity-100"
+          />
           <Header />
           {children}
         </Providers>
