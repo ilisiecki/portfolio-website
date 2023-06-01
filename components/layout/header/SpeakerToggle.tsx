@@ -26,7 +26,7 @@ const SpeakerToggle = (props: Props) => {
         onClick={() => {
           setSoundOn(false), playOff();
         }}
-        className={`${soundOn ? "" : "hidden"}`}
+        className={`${soundOn ? `` : `hidden`}`}
       >
         <SpeakerOn className="group h-6 w-6 fill-main-icon hover:fill-main-iconHover dark:fill-main-iconDark dark:hover:fill-main-iconHoverDark" />
       </button>

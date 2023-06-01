@@ -1,7 +1,9 @@
-import "./globals.css";
+import "@/app/globals.css";
 import { Inter } from "next/font/google";
 import { Providers } from "@/components/layout/Providers";
 import Header from "@/components/layout/header/Header";
+import { useLocale } from "next-intl";
+import { notFound } from "next/navigation";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -15,11 +17,20 @@ export const metadata = {
 
 export default function RootLayout({
   children,
+  params,
 }: {
   children: React.ReactNode;
+  params: { locale: string };
 }) {
+  const locale = useLocale();
+
+  // Show a 404 error if the user requests an unknown locale
+  if (params.locale !== locale) {
+    notFound();
+  }
+
   return (
-    <html lang="en">
+    <html lang={locale}>
       <body className={`${inter.variable} font-inter dark:bg-white`}>
         <Providers>
           <div
