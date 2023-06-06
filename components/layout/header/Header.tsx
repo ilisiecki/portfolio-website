@@ -4,9 +4,13 @@ import Github from "@/components/icons/Github";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
 import LanguageToggle from "./LanguageToggle";
+import MenuToggle from "./MenuToggle";
 
 const Header = () => {
   const t = useTranslations("Header");
+
+  const NAV_ITEMS: Array<string> = [t("work"), t("about"), t("contact")];
+
   return (
     <header className="px-4 sm:px-8 md:px-9">
       <div className="mx-auto flex max-w-screen-lg justify-between py-4 md:py-16">
@@ -33,13 +37,19 @@ const Header = () => {
             </Link>
           </div>
         </div>
-        <div className="flex items-center gap-9">
+        <div className="hidden items-center gap-9 sm:flex">
           <LanguageToggle />
           <ThemeToggle />
           <SpeakerToggle />
           <a href="https://github.com/ilisiecki" target="_blank">
             <Github className="group h-5 w-5 cursor-pointer fill-main-icon hover:fill-main-iconHover dark:fill-main-iconDark dark:hover:fill-main-iconHoverDark" />
           </a>
+          <div className="flex md:hidden">
+            <MenuToggle NAV_ITEMS={NAV_ITEMS} />
+          </div>
+        </div>
+        <div className="flex sm:hidden">
+          <MenuToggle NAV_ITEMS={NAV_ITEMS} />
         </div>
       </div>
     </header>

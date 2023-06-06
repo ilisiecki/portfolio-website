@@ -20,6 +20,8 @@ module.exports = {
           primary: "#000000",
           secondary: "#000000",
           background: "#262626",
+          textDark: "white",
+          text: "#262626",
           icon: "#262626",
           iconDark: "white",
           iconHover: "#737373",
