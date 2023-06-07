@@ -17,12 +17,12 @@ module.exports = {
     extend: {
       colors: {
         main: {
-          primary: "#000000",
-          secondary: "#000000",
-          background: "#262626",
+          primary: "#ff9900",
+          secondary: "#fd1d1d",
+          background: "#1c1917",
           textDark: "white",
-          text: "#262626",
-          icon: "#262626",
+          text: "#1c1917",
+          icon: "#1c1917",
           iconDark: "white",
           iconHover: "#737373",
           iconHoverDark: "#a3a3a3",

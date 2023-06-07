@@ -31,11 +31,11 @@ const MenuToggle = (props: Props) => {
   return (
     <div className="flex">
       <Sheet open={isOpen} onOpenChange={setIsOpen}>
-        <SheetTrigger className="outline-none">X</SheetTrigger>
+        <SheetTrigger>X</SheetTrigger>
         <SheetContent
           position="top"
           size="full"
-          className="flex justify-center dark:bg-main-background"
+          className="flex justify-center bg-white/60 dark:bg-main-background/80"
         >
           <div className="flex flex-col divide-y pt-8 dark:divide-main-iconDark/20">
             <Link

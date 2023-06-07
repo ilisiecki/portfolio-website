@@ -12,8 +12,8 @@ const Header = () => {
   const NAV_ITEMS: Array<string> = [t("work"), t("about"), t("contact")];
 
   return (
-    <header className="px-4 sm:px-8 md:px-9">
-      <div className="mx-auto flex max-w-screen-lg justify-between py-4 md:py-16">
+    <header className="px-4 sm:px-8">
+      <div className="mx-auto flex max-w-screen-lg justify-between py-4 md:pt-16">
         <div className="flex gap-12 font-medium text-main-icon dark:text-main-iconDark">
           <Link href="/">Igor Lisiecki - logo</Link>
           <div className="hidden gap-12 md:flex">
