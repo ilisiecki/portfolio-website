@@ -6,5 +6,23 @@
     "work": "Work",
     "about": "About",
     "contact": "Contact"
+  },
+  "Hero": {
+    "title": "Hi, I'm Igor!",
+    "text-1": "I'm",
+    "text-1-1": "Software Engineer",
+    "text-1-2": "and I",
+    "text-1-3": "love",
+    "text-1-4": "to create, develop and improve all kind of software",
+    "text-1-5": "and also myself"
+  },
+  "About": {
+    "title": "About Me",
+    "subtitle": "Get to know me!",
+    "subtitle-2": "Currently in relationship with:",
+    "text-1": "So..., as you should already know my name is Igor 😅. I graduated in Computer Engineering with bachelor degree at the University of Zielona Góra. Since that moment I was working and improving my skills in different sections of IT.",
+    "text-2": "I have working experience with the web development, software testing and also with graphics design. Currently I spend most of the time on creating front-end applications for other companies and on improving my skills and learning new technologies.",
+    "text-3": "I like to pay attention to the details and I'm always trying to do my job as best as I can. I prefere learning-by-doing theory. I'm responsible and precise. I like to have real impact on projects that I'm working on. I'm always open for new opportunities and experiences.",
+    "text-4": "Currently looking for a job with tech stack that I like the most. I care about getting experience and creating interesting projects. I will be happy to work as front-end or fullstack developer. I'm ready to temporary relocate if needed."
   }
 }
