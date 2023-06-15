@@ -2,6 +2,7 @@ import "@/app/globals.css";
 import { Inter } from "next/font/google";
 import { Providers } from "@/components/layout/Providers";
 import Header from "@/components/layout/header/Header";
+import Footer from "@/components/layout/footer/Footer";
 import { useLocale } from "next-intl";
 import { notFound } from "next/navigation";
 
@@ -39,6 +40,7 @@ export default function RootLayout({
           />
           <Header />
           {children}
+          <Footer />
         </Providers>
       </body>
     </html>

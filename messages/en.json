@@ -3,6 +3,7 @@
     "title": "Hello World"
   },
   "Header": {
+    "home": "Home",
     "work": "Work",
     "about": "About",
     "contact": "Contact"

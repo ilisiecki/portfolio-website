@@ -9,7 +9,12 @@ import MenuToggle from "./MenuToggle";
 const Header = () => {
   const t = useTranslations("Header");
 
-  const NAV_ITEMS: Array<string> = [t("work"), t("about"), t("contact")];
+  const NAV_ITEMS: Array<string> = [
+    t("home"),
+    t("work"),
+    t("about"),
+    t("contact"),
+  ];
 
   return (
     <header className="px-4 sm:px-8">

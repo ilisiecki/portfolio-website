@@ -1,12 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import {
-  Sheet,
-  SheetContent,
-  SheetDescription,
-  SheetTrigger,
-} from "@/components/ui/sheet";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import ThemeToggle from "./ThemeToggle";
 import SpeakerToggle from "./SpeakerToggle";
 import Github from "@/components/icons/Github";
@@ -39,25 +34,32 @@ const MenuToggle = (props: Props) => {
         >
           <div className="flex flex-col divide-y pt-8 dark:divide-main-iconDark/20">
             <Link
-              href="/work"
+              href="/"
               onClick={() => setIsOpen(false)}
               className="w-60 py-3 capitalize text-main-text dark:text-main-textDark sm:w-96"
             >
               {props.NAV_ITEMS[0]}
             </Link>
             <Link
-              href="/about"
+              href="/work"
               onClick={() => setIsOpen(false)}
               className="w-60 py-3 capitalize text-main-text dark:text-main-textDark sm:w-96"
             >
               {props.NAV_ITEMS[1]}
             </Link>
             <Link
-              href="/contact"
+              href="/about"
               onClick={() => setIsOpen(false)}
               className="w-60 py-3 capitalize text-main-text dark:text-main-textDark sm:w-96"
             >
               {props.NAV_ITEMS[2]}
+            </Link>
+            <Link
+              href="/contact"
+              onClick={() => setIsOpen(false)}
+              className="w-60 py-3 capitalize text-main-text dark:text-main-textDark sm:w-96"
+            >
+              {props.NAV_ITEMS[3]}
             </Link>
 
             <div className="flex justify-center">
