@@ -25,5 +25,14 @@
     "text-2": "I have working experience with the web development, software testing and also with graphics design. Currently I spend most of the time on creating front-end applications for other companies and on improving my skills and learning new technologies.",
     "text-3": "I like to pay attention to the details and I'm always trying to do my job as best as I can. I prefere learning-by-doing theory. I'm responsible and precise. I like to have real impact on projects that I'm working on. I'm always open for new opportunities and experiences.",
     "text-4": "Currently looking for a job with tech stack that I like the most. I care about getting experience and creating interesting projects. I will be happy to work as front-end or fullstack developer. I'm ready to temporary relocate if needed."
+  },
+  "Work": {
+    "title": "Work",
+    "title-board-1": "My Personal Website",
+    "title-board-2": "EasyDict fullstack app",
+    "title-board-3": "YouTube front-end clone",
+    "description-1": "",
+    "description-2": "",
+    "description-3": "My goal for this app was to create front-end copy of youtube application. I was trying to achieve not only same look but also re-create behavior of website and individual components. It was my first time when I was using next.js with App Router which was in beta at that moment. I think App Router functionality changes a lot and I wanted to learn it and understand as soon as possible."
   }
 }

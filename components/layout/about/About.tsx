@@ -1,37 +1,36 @@
 import { useTranslations } from "next-intl";
 
-type Props = {};
-
 const skills = [
   { name: "Next.js" },
   { name: "React" },
   { name: "TypeScript" },
-  { name: "JavaScript" },
   { name: "Tailwind CSS" },
+  { name: "Prisma" },
   { name: "TanStack Query" },
   { name: "Zustand" },
   { name: "Shadcn/ui" },
-  { name: "Prisma" },
-  { name: "Git" },
   { name: "Vercel" },
-  { name: "SQL" },
+  { name: "Git" },
   { name: "MySQL" },
+  { name: "SQL" },
   { name: "CSS" },
   { name: "HTML" },
+  { name: "Photoshop" },
+  { name: "Illustrator" },
 ];
 
-const About = (props: Props) => {
+const About = () => {
   const t = useTranslations("About");
   return (
     <section id="about" className="mt-12 lg:mt-48">
-      <div>
+      <div className="my-8">
         <h2 className="text-center text-4xl font-bold text-main-text dark:text-main-textDark">
           {t("title")}
           <hr className="mx-auto my-4 h-1 w-6 rounded border-0 bg-main-primary"></hr>
         </h2>
       </div>
       <div className="flex flex-col justify-center space-y-10 align-top md:flex-row md:space-x-10 md:space-y-0 md:p-4 md:text-left">
-        <div className="md:w-1/2">
+        <div className="text-main-text dark:text-main-textDark md:w-1/2">
           <h3 className="mb-6 justify-center text-center text-2xl font-semibold text-main-text dark:text-main-textDark lg:text-left">
             {t("subtitle")}
           </h3>
@@ -52,7 +51,7 @@ const About = (props: Props) => {
               return (
                 <div
                   key={idx}
-                  className="mt-2 cursor-default rounded bg-main-secondary/70 px-4 py-2 font-semibold text-main-text hover:bg-main-primary/80 dark:text-main-textDark"
+                  className="mt-2 cursor-default rounded bg-main-secondary/90 px-4 py-2 font-semibold text-main-text hover:bg-main-primary/80 dark:bg-main-secondary/70 dark:text-main-textDark dark:hover:bg-main-primary/80"
                 >
                   {item.name}
                 </div>

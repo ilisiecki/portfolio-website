@@ -23,16 +23,16 @@ const Header = () => {
           <Link href="/">Igor Lisiecki - logo</Link>
           <div className="hidden gap-12 md:flex">
             <Link
-              href="/work"
-              className="hover:text-main-iconHover dark:hover:text-main-iconHoverDark"
-            >
-              {t("work")}
-            </Link>
-            <Link
               href="/about"
               className="dark:hover:text-main-iconHoverDa hover:text-main-iconHover"
             >
               {t("about")}
+            </Link>
+            <Link
+              href="/work"
+              className="hover:text-main-iconHover dark:hover:text-main-iconHoverDark"
+            >
+              {t("work")}
             </Link>
             <Link
               href="/contact"

@@ -25,5 +25,14 @@
     "text-2": "Posiadam doświadczenie zawodowe w tworzeniu stron internetowych, testowaniu oprogramowania oraz z grafiką komputerową. Aktualnie większość czasu spędzam na tworzeniu aplikacji front-end dla innych klientów oraz na polepszaniu swoich umiejętności i ucząc się nowych technologi.",
     "text-3": "Lubię przywiązywać wagę do detali i zawsze staram się wykonywać swoją pracę najlepiej jak tylko potrafię. Preferuję zasadę uczenia się poprzez tworzenie. Jestem osobą punktualną i odpowiedzialną. Lubię mieć realny wpływ przy projektach, którymi się zajmuję. Zawsze jestem otwarty na nowe propozycje i doświadczenia.",
     "text-4": "Aktualnie szukam pracy w technlogiach, które najbardziej sobie cenie. Zależy mi na zdobyciu doświadczenia oraz tworzeniu ciekawych projektów. Z chęcią podejmę się współpracy na stanowistku programisty front-end jak i fullstack. Jestem skłonny do tymczasowego przeprowadzenia się w razie potrzeby."
+  },
+  "Work": {
+    "title": "Projekty",
+    "title-board-1": "Moja prywatna strona",
+    "title-board-2": "Aplikacja fullstack EasyDict",
+    "title-board-3": "YouTube front-end klon",
+    "description-1": "",
+    "description-2": "",
+    "description-3": ""
   }
 }
