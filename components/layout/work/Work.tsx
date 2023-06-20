@@ -34,16 +34,22 @@ const Work = () => {
         title={t("title-board-1")}
         description={t("description-1")}
         tools={["A", "B", "C", "D"]}
+        readMore={t("read-more")}
+        gitHubLink=""
       />
       <Board
         title={t("title-board-2")}
         description={t("description-2")}
         tools={["A", "B", "C", "D"]}
+        readMore={t("read-more")}
+        gitHubLink=""
       />
       <Board
         title={t("title-board-3")}
         description={t("description-3")}
         tools={["Next.Js", "Tailwind", "Zustand", "Headless Ui"]}
+        readMore={t("read-more")}
+        gitHubLink="https://github.com/ilisiecki/nextjs13.2-youtubue-ui"
       />
     </section>
   );

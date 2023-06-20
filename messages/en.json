@@ -31,8 +31,9 @@
     "title-board-1": "My Personal Website",
     "title-board-2": "EasyDict fullstack app",
     "title-board-3": "YouTube front-end clone",
+    "read-more": "Read more...",
     "description-1": "",
     "description-2": "",
-    "description-3": "My goal for this app was to create front-end copy of youtube application. I was trying to achieve not only same look but also re-create behavior of website and individual components. It was my first time when I was using next.js with App Router which was in beta at that moment. I think App Router functionality changes a lot and I wanted to learn it and understand as soon as possible."
+    "description-3": "My goal for this app was to create front-end copy of youtube application. I was trying to achieve not only same look but also re-create behavior of website and individual components. It was my first time when I was using next.js with App Router which was in beta at that moment. I think App Router functionality changes a lot and I wanted to learn it and understand as soon as possible "
   }
 }

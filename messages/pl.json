@@ -31,8 +31,9 @@
     "title-board-1": "Moja prywatna strona",
     "title-board-2": "Aplikacja fullstack EasyDict",
     "title-board-3": "YouTube front-end klon",
+    "read-more": "Czytaj więcej...",
     "description-1": "",
     "description-2": "",
-    "description-3": ""
+    "description-3": "Celem tej aplikacji było odtworzenie aplikacji youtube. Starałem się odwzorować nie tylko taki sam wygląd, ale też odtworzyć jak strona i jej poszczególne elementy funkcjonują. To był mój pierwszy projekt z wykorzystaniem next.js z App Router, który był jeszcze w wersji beta w tym momencie. Uważam, że funkcjonalność App Router zmienia naprawdę sporo i chciałem jak najszybciej ją zrozumieć "
   }
 }
