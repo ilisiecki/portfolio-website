@@ -111,8 +111,9 @@ const review = {
 };
 
 const container = {
+  display: "flex",
   width: "580px",
-  margin: "30px auto",
+  margin: "0 auto",
   backgroundColor: "#ffffff",
 };
 
@@ -129,7 +130,9 @@ const logo = {
   display: "flex",
   justifyContent: "center",
   alingItems: "center",
-  padding: 30,
+  paddingTop: 30,
+  marginBottom: 30,
+  paddingLeft: 95,
 };
 
 const sectionsBorders = {
