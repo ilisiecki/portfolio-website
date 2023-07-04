@@ -4,24 +4,6 @@ import Board from "./Board";
 const Work = () => {
   const t = useTranslations("Work");
 
-  const skills = [
-    { name: "Next.js" },
-    { name: "React" },
-    { name: "TypeScript" },
-    { name: "Tailwind CSS" },
-    { name: "Prisma" },
-    { name: "TanStack Query" },
-    { name: "Zustand" },
-    { name: "Shadcn/ui" },
-    { name: "Vercel" },
-    { name: "Git" },
-    { name: "MySQL" },
-    { name: "SQL" },
-    { name: "CSS" },
-    { name: "HTML" },
-    { name: "Photoshop" },
-    { name: "Illustrator" },
-  ];
   return (
     <section id="work" className="mt-8">
       <div>
@@ -33,22 +15,32 @@ const Work = () => {
       <Board
         title={t("title-board-1")}
         description={t("description-1")}
-        tools={["A", "B", "C", "D"]}
+        tools={["Next.Js", "Tailwind", "Zustand", "Framer", "Shadcn/ui"]}
         readMore={t("read-more")}
-        gitHubLink=""
+        liveLink="https://github.com/ilisiecki/nextjs13.2-youtubue-ui"
+        gitHubLink="https://github.com/ilisiecki/portfolio-website"
       />
       <Board
         title={t("title-board-2")}
         description={t("description-2")}
-        tools={["A", "B", "C", "D"]}
+        tools={[
+          "Next.Js",
+          "tRCP",
+          "Prisma",
+          "NextAuth",
+          "Tailwind",
+          "Headless Ui",
+        ]}
         readMore={t("read-more")}
-        gitHubLink=""
+        liveLink="https://github.com/ilisiecki/nextjs13.2-youtubue-ui"
+        gitHubLink="https://github.com/ilisiecki/t3-easydict-fullstack"
       />
       <Board
         title={t("title-board-3")}
         description={t("description-3")}
         tools={["Next.Js", "Tailwind", "Zustand", "Headless Ui"]}
         readMore={t("read-more")}
+        liveLink="https://nextjs13-2-youtubue-ui.vercel.app/"
         gitHubLink="https://github.com/ilisiecki/nextjs13.2-youtubue-ui"
       />
     </section>

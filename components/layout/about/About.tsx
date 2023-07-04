@@ -6,6 +6,7 @@ const skills = [
   { name: "TypeScript" },
   { name: "Tailwind CSS" },
   { name: "Prisma" },
+  { name: "Framer Motion" },
   { name: "TanStack Query" },
   { name: "Zustand" },
   { name: "Shadcn/ui" },
