@@ -40,7 +40,7 @@ export const ThanksEmail = ({
       <Body style={main}>
         <Container style={container}>
           <Section style={logo}>
-            <Img width={114} src={`${baseUrl}/static/twitch-logo.png`} />
+            <Img width={114} src={`${baseUrl}/images/fox-email.png`} />
           </Section>
           <Section style={sectionsBorders}>
             <Row>
@@ -80,14 +80,6 @@ export const ThanksEmail = ({
         </Container>
 
         <Section style={footer}>
-          <Row>
-            <Column align="right" style={{ width: "50%", paddingRight: "8px" }}>
-              <Img src={`${baseUrl}/static/twitch-icon-twitter.png`} />
-            </Column>
-            <Column align="left" style={{ width: "50%", paddingLeft: "8px" }}>
-              <Img src={`${baseUrl}/static/twitch-icon-facebook.png`} />
-            </Column>
-          </Row>
           <Text style={{ textAlign: "center", color: "#706a7b" }}>
             © 2023 Igor Lisiecki, All Rights Reserved <br />
           </Text>
@@ -151,7 +143,7 @@ const sectionBorder = {
 };
 
 const sectionCenter = {
-  borderBottom: "1px solid rgb(145,71,255)",
+  borderBottom: "1px solid rgb(255,153,0)",
   width: "102px",
 };
 
