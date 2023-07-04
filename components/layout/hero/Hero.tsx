@@ -23,7 +23,7 @@ const Hero = () => {
           <Image
             className="relative z-30 w-[20rem] drop-shadow-2xl sm:w-[20rem] md:w-[25rem] lg:w-[35rem]"
             src="/images/fox.webp"
-            alt=""
+            alt="Picture of me as a fox"
             width={500}
             height={450}
           />
