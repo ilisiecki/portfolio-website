@@ -10,20 +10,6 @@ const nextConfig = {
     });
     return config;
   },
-  images: {
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "",
-        pathname: "/**",
-      },
-      {
-        protocol: "https",
-        hostname: "",
-        pathname: "/**",
-      },
-    ],
-  },
 };
 
 const withNextIntl = require("next-intl/plugin")(
