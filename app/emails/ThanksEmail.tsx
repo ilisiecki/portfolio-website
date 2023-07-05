@@ -10,6 +10,7 @@ import {
   Row,
   Section,
   Text,
+  Tailwind,
 } from "@react-email/components";
 import * as React from "react";
 
@@ -37,66 +38,64 @@ export const ThanksEmail = ({
     <Html>
       <Head />
       <Preview> I appreciate you reaching out... </Preview>
-      <Body style={main}>
-        <Container style={container}>
-          <Section style={logo}>
-            <Img width={114} src={`${baseUrl}/images/fox-email.png`} />
-          </Section>
-          <Section style={sectionsBorders}>
-            <Row>
-              <Column style={sectionBorder} />
-              <Column style={sectionCenter} />
-              <Column style={sectionBorder} />
-            </Row>
-          </Section>
-          <Section style={content}>
-            <Text style={paragraph}>Hi {username} 🌹,</Text>
-            <Text style={paragraph}>
-              I appreciate you reaching out with me. This is just confirm
-              messange and you don&apos;t have answer to it.
-            </Text>
-            <Text style={paragraph}>
-              I will do my best to respond as soon as possible 🤗.
-            </Text>
-            <Text style={paragraph}>
-              Message sended:{" "}
-              <Text style={review}> &quot;{message}&quot; </Text>
-              <Text style={paragraph}> at 🕓: {formattedDate}. </Text>
-            </Text>
+      <Tailwind>
+        <Body className="mx-auto bg-neutral-200 font-sans">
+          <Container className="mt-8 rounded-lg bg-white text-center shadow-lg">
+            <Img
+              src={`${baseUrl}/images/fox-email.png`}
+              className="mx-auto w-48 py-4"
+            />
+            <Section className="flex w-full">
+              <Row>
+                <Column style={sectionBorder} />
+                <Column style={sectionCenter} />
+                <Column style={sectionBorder} />
+              </Row>
+            </Section>
+            <Section style={content}>
+              <Text style={paragraph}>Hi {username} 🌹,</Text>
+              <Text style={paragraph}>
+                I appreciate you reaching out with me. This is just confirm
+                messange and you don&apos;t have answer to it.
+              </Text>
+              <Text style={paragraph}>
+                I will do my best to respond as soon as possible 🤗.
+              </Text>
+              <Text style={paragraph}>
+                Message sent:{" "}
+                <Text style={review}> &quot;{message}&quot; </Text>
+                <Text style={paragraph}> at 🕓: {formattedDate}. </Text>
+              </Text>
 
-            <Text style={paragraph}>
-              If you have any questions please send message on{" "}
-              <Link href="igorlisiecki.pl/contact" style={link}>
-                Contact
-              </Link>
-              .
-            </Text>
-            <Text style={paragraph}>
-              Thanks,
-              <br />
-              Igor Lisiecki
+              <Text style={paragraph}>
+                If you have any questions please send message on{" "}
+                <Link href="igorlisiecki.pl/contact" style={link}>
+                  Contact
+                </Link>
+                .
+              </Text>
+              <Text style={paragraph}>
+                Thanks,
+                <br />
+                Igor Lisiecki
+              </Text>
+            </Section>
+          </Container>
+
+          <Section style={footer}>
+            <Text style={{ textAlign: "center", color: "#706a7b" }}>
+              © 2023 Igor Lisiecki, All Rights Reserved <br />
             </Text>
           </Section>
-        </Container>
-
-        <Section style={footer}>
-          <Text style={{ textAlign: "center", color: "#706a7b" }}>
-            © 2023 Igor Lisiecki, All Rights Reserved <br />
-          </Text>
-        </Section>
-      </Body>
+        </Body>
+      </Tailwind>
     </Html>
   );
 };
 
 export default ThanksEmail;
 
-const fontFamily = "HelveticaNeue,Helvetica,Arial,sans-serif";
-
-const main = {
-  backgroundColor: "#efeef1",
-  fontFamily,
-};
+const later = "src={`${baseUrl}/images/fox-email.png`}";
 
 const paragraph = {
   lineHeight: 1.5,
@@ -110,13 +109,6 @@ const review = {
   borderRadius: "4px",
 };
 
-const container = {
-  display: "flex",
-  width: "580px",
-  margin: "0 auto",
-  backgroundColor: "#ffffff",
-};
-
 const footer = {
   width: "580px",
   margin: "0 auto",
@@ -124,20 +116,6 @@ const footer = {
 
 const content = {
   padding: "5px 50px 10px 60px",
-};
-
-const logo = {
-  display: "flex",
-  justifyContent: "center",
-  alingItems: "center",
-  paddingTop: 30,
-  marginBottom: 30,
-  paddingLeft: 95,
-};
-
-const sectionsBorders = {
-  width: "100%",
-  display: "flex",
 };
 
 const sectionBorder = {
