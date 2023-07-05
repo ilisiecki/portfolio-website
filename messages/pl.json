@@ -37,6 +37,13 @@
     "description-3": "Celem tej aplikacji było odtworzenie aplikacji YouTube. Starałem się odwzorować nie tylko taki sam wygląd, ale też odtworzyć jak strona i jej poszczególne elementy funkcjonują. To był mój pierwszy projekt z wykorzystaniem Next.js z App Router, który był jeszcze w wersji beta w tym momencie. Uważam, że funkcjonalność App Router zmienia naprawdę sporo i chciałem jak najszybciej ją zrozumieć "
   },
   "Contact": {
-    "title": "Kontakt"
+    "title": "Kontakt",
+    "title-1": "Imię",
+    "title-3": "Wiadomość",
+    "placeholder-1": "Podaj swoje imię...",
+    "placeholder-2": "Podaj swój adres email...",
+    "placeholder-3": "Napisz swoją wiadomość...",
+    "button": "Wyślij",
+    "succes-message": "Wiadomość została wysłana poprawnie. Sprawdź swoją skrzynkę pocztową w ramach potwierdzenia."
   }
 }

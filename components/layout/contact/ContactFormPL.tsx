@@ -23,20 +23,20 @@ const FormSchema = z.object({
   message: z
     .string()
     .min(15, {
-      message: "Message must be at least 15 characters.",
+      message: "Wiadomość musi mieć przynajmniej 15 znaków.",
     })
     .max(1200, {
-      message: "Message is too long.",
+      message: "Wiadomość jest za długa.",
     }),
   username: z.string().min(2, {
-    message: "Username must be at least 2 characters.",
+    message: "Imię musi mieć przynajmniej 2 litery.",
   }),
   email: z.string().email({
-    message: "Write correct email address.",
+    message: "Nieprawidłowy adres email",
   }),
 });
 
-const ContactForm = () => {
+const ContactFormPL = () => {
   const [loading, setLoading] = useState<boolean>(false);
   const [emailSent, setEmailSent] = useState<boolean>(false);
 
@@ -52,7 +52,7 @@ const ContactForm = () => {
   async function onSubmit(data: z.infer<typeof FormSchema>) {
     setLoading(true);
 
-    const toastLoadingId = toast.loading("Sending email...");
+    const toastLoadingId = toast.loading("Wysyłanie wiadomości...");
 
     try {
       await fetch("/api/send", {
@@ -64,7 +64,7 @@ const ContactForm = () => {
         }),
       });
       setEmailSent(true);
-      toast.success("Sent email success", {
+      toast.success("Wiadomość została wysłana", {
         id: toastLoadingId,
         duration: 3500,
       });
@@ -72,7 +72,7 @@ const ContactForm = () => {
       form.reset();
     } catch (error) {
       console.error("Failed to send email: ", error);
-      toast.error("Sent email error", {
+      toast.error("Błąd podczas wysyłania wiadomości", {
         id: toastLoadingId,
         duration: 3500,
       });
@@ -94,10 +94,10 @@ const ContactForm = () => {
             name="username"
             render={({ field }) => (
               <FormItem>
-                <FormLabel htmlFor="username">Name</FormLabel>
+                <FormLabel htmlFor="username">Imię</FormLabel>
                 <FormControl>
                   <Input
-                    placeholder="Write your name..."
+                    placeholder="Podaj swoje imię..."
                     {...field}
                     id="username"
                     name="username"
@@ -116,7 +116,7 @@ const ContactForm = () => {
                 <FormLabel htmlFor="email">Email</FormLabel>
                 <FormControl>
                   <Input
-                    placeholder="Write your email..."
+                    placeholder="Podaj swój adres email..."
                     {...field}
                     id="email"
                     name="email"
@@ -132,11 +132,11 @@ const ContactForm = () => {
             name="message"
             render={({ field }) => (
               <FormItem>
-                <FormLabel htmlFor="message">Message</FormLabel>
+                <FormLabel htmlFor="message">Wiadomość</FormLabel>
                 <FormControl>
                   <p className="first-letter:capitalize">
                     <Textarea
-                      placeholder="Write your message..."
+                      placeholder="Napisz swoją wiadomość..."
                       className="border-main-background/20dark:border-main-textDark/10 dark:bg-main-textDark/10"
                       {...field}
                       id="message"
@@ -149,12 +149,12 @@ const ContactForm = () => {
             )}
           />
           <Button className={buttonVariants()} disabled={loading}>
-            Submit
+            Wyślij
           </Button>
           {emailSent && (
             <div className="inline-flex p-4 text-xs text-main-text/60 dark:text-main-textDark/40">
-              Email has been sent successfully. Please check your email for
-              confirmation.
+              Wiadomość została wysłana poprawnie. Sprawdź swoją skrzynkę
+              pocztową w ramach potwierdzenia.
             </div>
           )}
         </form>
@@ -163,4 +163,4 @@ const ContactForm = () => {
   );
 };
 
-export default ContactForm;
+export default ContactFormPL;

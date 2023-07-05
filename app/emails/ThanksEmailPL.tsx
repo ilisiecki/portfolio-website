@@ -24,7 +24,7 @@ const baseUrl = process.env.VERCEL_URL
   ? `https://${process.env.VERCEL_URL}`
   : "";
 
-export const ThanksEmail = ({
+export const ThanksEmailPL = ({
   username,
   message,
   updatedDate = new Date(),
@@ -37,7 +37,7 @@ export const ThanksEmail = ({
   return (
     <Html>
       <Head />
-      <Preview> I appreciate you reaching out... </Preview>
+      <Preview> Dziękuję za kontakt... </Preview>
       <Tailwind>
         <Body className="mx-auto bg-neutral-200 font-sans">
           <Container className="rounded-lg bg-white text-center shadow-lg">
@@ -53,33 +53,37 @@ export const ThanksEmail = ({
               </Row>
             </Section>
             <Section style={content}>
-              <Text style={paragraph}>Hi {username} 🌹,</Text>
+              <Text style={paragraph}>Cześć {username} 🌹,</Text>
               <Text style={paragraph}>
-                I appreciate you reaching out with me. This is just confirm
-                messange and you don&apos;t have answer to it.
+                Dziękuję za kontakt. Jest to tylko wiadomość potwierdzająca
+                otrzymanie prze zemnie Twojej wiadomości. Nie musisz na nią
+                odpowiadać.
               </Text>
               <Text style={paragraph}>
-                I will do my best to respond as soon as possible 🤗.
+                Zrobię wszystko, aby odpowiedzieć najszybciej jak to możliwe 🤗.
               </Text>
               <Text style={paragraph}>
-                Message sent:{" "}
+                Wysłana wiadomość:{" "}
                 <Text style={review}> &quot;{message}&quot; </Text>
-                <Text style={paragraph}> at 🕓: {formattedDate}. </Text>
+                <Text style={paragraph}>
+                  {" "}
+                  Data wysłania 🕓: {formattedDate}.{" "}
+                </Text>
               </Text>
 
               <Text style={paragraph}>
-                If you have any questions please send message on{" "}
+                Jeżeli masz jeszcze jakieś pytania odezwij się proszę tutaj{" "}
                 <Link
-                  href="igorlisiecki.pl/contact"
+                  href="igorlisiecki.pl/contact/pl"
                   target="_blank"
                   style={link}
                 >
-                  Contact
+                  Kontakt
                 </Link>
                 .
               </Text>
               <Text style={paragraph}>
-                Thanks,
+                Dziękuję,
                 <br />
                 Igor Lisiecki
               </Text>
@@ -88,7 +92,7 @@ export const ThanksEmail = ({
 
           <Section style={footer}>
             <Text style={{ textAlign: "center", color: "#706a7b" }}>
-              © 2023 Igor Lisiecki, All Rights Reserved <br />
+              © 2023 Igor Lisiecki, Wszelkie prawa zastrzeżone <br />
             </Text>
           </Section>
         </Body>
@@ -97,7 +101,7 @@ export const ThanksEmail = ({
   );
 };
 
-export default ThanksEmail;
+export default ThanksEmailPL;
 
 const paragraph = {
   lineHeight: 1.5,

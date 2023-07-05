@@ -37,6 +37,13 @@
     "description-3": "My goal for this app was to create front-end copy of YouTube application. I was trying to achieve not only same look but also re-create behavior of website and individual components. It was my first time when I was using Next.js with App Router which was in beta at that moment. I think App Router functionality changes a lot and I wanted to learn it and understand as soon as possible "
   },
   "Contact": {
-    "title": "Contact"
+    "title": "Contact",
+    "title-1": "Name",
+    "title-3": "Message",
+    "placeholder-1": "Write your name...",
+    "placeholder-2": "Write your email...",
+    "placeholder-3": "Write your message...",
+    "button": "Submit",
+    "succes-message": "Email has been sent successfully. Please check your email for confirmation."
   }
 }
