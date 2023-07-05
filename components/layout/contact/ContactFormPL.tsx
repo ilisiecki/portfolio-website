@@ -55,7 +55,7 @@ const ContactFormPL = () => {
     const toastLoadingId = toast.loading("Wysyłanie wiadomości...");
 
     try {
-      await fetch("/api/send", {
+      await fetch("/api/sendPL", {
         method: "POST",
         body: JSON.stringify({
           username: data.username,

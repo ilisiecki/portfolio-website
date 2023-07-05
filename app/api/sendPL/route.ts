@@ -1,4 +1,4 @@
-import ThanksEmailPL from "@/app/emails/ThanksEmail";
+import ThanksEmailPL from "@/app/emails/ThanksEmailPL";
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
 
