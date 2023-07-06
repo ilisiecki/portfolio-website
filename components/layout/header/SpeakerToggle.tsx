@@ -6,11 +6,13 @@ import SpeakerOn from "@/components/icons/SpekaerOn";
 import SpeakerOff from "@/components/icons/SpeakerOff";
 import audioToggleOn from "@/sounds/audioToggleOn.mp3";
 import audioToggleOff from "@/sounds/audioToggleOff.mp3";
+import { useStore } from "@/store/store";
 
 type Props = {};
 
 const SpeakerToggle = (props: Props) => {
   const [soundOn, setSoundOn] = useState(true);
+  const { isSound, setIsSound } = useStore();
 
   const [playOn] = useSound(audioToggleOn, {
     volume: 0.5,
@@ -24,17 +26,17 @@ const SpeakerToggle = (props: Props) => {
     <>
       <button
         onClick={() => {
-          setSoundOn(false), playOff();
+          setIsSound(false), playOff();
         }}
-        className={`${soundOn ? `` : `hidden`}`}
+        className={`${isSound ? `` : `hidden`}`}
       >
         <SpeakerOn className="group h-6 w-6 fill-main-icon hover:fill-main-iconHover dark:fill-main-iconDark dark:hover:fill-main-iconHoverDark" />
       </button>
       <button
         onClick={() => {
-          setSoundOn(true), playOn();
+          setIsSound(true), playOn();
         }}
-        className={`${soundOn ? "hidden" : ""}`}
+        className={`${isSound ? "hidden" : ""}`}
       >
         <SpeakerOff className="h-6 w-6 fill-main-icon hover:fill-main-iconHover dark:fill-main-iconDark dark:hover:fill-main-iconHoverDark" />
       </button>

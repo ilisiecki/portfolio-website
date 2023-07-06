@@ -6,6 +6,7 @@ import Language from "@/components/icons/Language";
 import useSound from "use-sound";
 import clickOnMenu from "@/sounds/clickOnMenu.mp3";
 import LinkIntl from "next-intl/link";
+import { useStore } from "@/store/store";
 import {
   Popover,
   PopoverContent,
@@ -15,11 +16,10 @@ import {
 type Props = {};
 
 const LanguageToggle = (props: Props) => {
-  const [play, { stop }] = useSound(clickOnMenu, { volume: 0.5 });
-
+  const [play, { stop }] = useSound(clickOnMenu, { volume: 1 });
   const [isHovering, setIsHovering] = useState(false);
-
   const pathname = usePathname().slice(0, 3);
+  const { isSound } = useStore();
 
   return (
     <>
@@ -27,11 +27,11 @@ const LanguageToggle = (props: Props) => {
         <PopoverTrigger
           onClick={() => {
             setIsHovering(true);
-            play();
+            isSound ? play() : "";
           }}
           onMouseEnter={() => {
             setIsHovering(true);
-            play();
+            isSound ? play() : "";
           }}
           onMouseLeave={() => {
             setIsHovering(false);

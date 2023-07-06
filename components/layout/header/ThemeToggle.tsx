@@ -6,11 +6,13 @@ import Sun from "@/components/icons/Sun";
 import Moon from "@/components/icons/Moon";
 import themeToggleOn from "@/sounds/themeToggleOn.mp3";
 import themeToggleOff from "@/sounds/themeToggleOff.mp3";
+import { useStore } from "@/store/store";
 
 type Props = {};
 
 const ThemeToggle = (props: Props) => {
   const { setTheme } = useTheme();
+  const { isSound } = useStore();
 
   const [playOn] = useSound(themeToggleOn, {
     volume: 1.5,
@@ -24,7 +26,7 @@ const ThemeToggle = (props: Props) => {
     <>
       <button
         onClick={() => {
-          setTheme("dark"), playOff();
+          setTheme("dark"), isSound ? playOff() : "";
         }}
         className="hover:fill-main-iconHover dark:hidden"
       >
@@ -32,7 +34,7 @@ const ThemeToggle = (props: Props) => {
       </button>
       <button
         onClick={() => {
-          setTheme("light"), playOn();
+          setTheme("light"), isSound ? playOn() : "";
         }}
         className="hidden dark:inline-block"
       >
