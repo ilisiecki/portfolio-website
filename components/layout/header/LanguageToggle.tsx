@@ -16,8 +16,13 @@ import {
 const LanguageToggle = () => {
   const [play, { stop }] = useSound(clickOnMenu, { volume: 1 });
   const [isHovering, setIsHovering] = useState(false);
+  let currentPathname = usePathname();
   const pathname = usePathname().slice(0, 3);
   const { isSound } = useSoundStore();
+
+  if (pathname === "/pl") {
+    currentPathname = currentPathname.slice(3);
+  }
 
   return (
     <>
@@ -49,7 +54,7 @@ const LanguageToggle = () => {
               pathname === "/pl" ? "" : "font-black"
             } flex w-full justify-center`}
           >
-            <LinkIntl href="/" locale="en">
+            <LinkIntl href={currentPathname} locale="en">
               en
             </LinkIntl>
           </div>
@@ -58,7 +63,7 @@ const LanguageToggle = () => {
               pathname === "/pl" ? "font-black" : ""
             } flex w-full justify-center`}
           >
-            <LinkIntl href="/" locale="pl">
+            <LinkIntl href={currentPathname} locale="pl">
               pl
             </LinkIntl>
           </div>
