@@ -5,14 +5,12 @@ import SpeakerOn from "@/components/icons/SpekaerOn";
 import SpeakerOff from "@/components/icons/SpeakerOff";
 import audioToggleOn from "@/sounds/audioToggleOn.mp3";
 import audioToggleOff from "@/sounds/audioToggleOff.mp3";
-import { useStore } from "@/store/store";
-import { useEffect, useState } from "react";
+import { useSoundStore } from "@/store/useSoundStore";
+import { useState, useEffect } from "react";
 
-type Props = {};
-
-const SpeakerToggle = (props: Props) => {
-  const [soundState, setSoundState] = useState<boolean>();
-  const { isSound, setIsSound } = useStore();
+const SpeakerToggle = () => {
+  const [soundState, setSoundState] = useState<boolean>(true);
+  const { isSound, setIsSound } = useSoundStore();
 
   useEffect(() => {
     setSoundState(isSound);

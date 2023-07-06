@@ -1,14 +1,9 @@
-import { useTranslations } from "next-intl";
-import Link from "next-intl/link";
+import AboutComponent from "@/components/layout/about/About";
 
-type Props = {};
-
-const About = (props: Props) => {
-  const t = useTranslations("Index");
+const About = () => {
   return (
-    <div>
-      <div></div>
-      <div>{t("title")}</div>
+    <div className="mx-auto max-w-5xl px-4 sm:px-6 md:max-w-7xl">
+      <AboutComponent />
     </div>
   );
 };

@@ -1,9 +1,9 @@
-type Props = {};
+import WorkComponent from "@/components/layout/work/Work";
 
-const Work = (props: Props) => {
+const Work = () => {
   return (
-    <div>
-      <div>This is work page</div>
+    <div className="mx-auto max-w-5xl px-4 sm:px-6 md:max-w-7xl">
+      <WorkComponent />
     </div>
   );
 };

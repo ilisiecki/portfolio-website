@@ -1,9 +1,11 @@
-type Props = {};
+import ContactComponent from "@/components/layout/contact/Contact";
+import { useTranslations } from "next-intl";
 
-const Contact = (props: Props) => {
+const Contact = () => {
+  const t = useTranslations("Contact");
   return (
-    <div>
-      <div>This is contact page</div>
+    <div className="mx-auto max-w-5xl px-4 sm:px-6 md:max-w-7xl">
+      <ContactComponent title={t("title")} />
     </div>
   );
 };

@@ -6,13 +6,11 @@ import Sun from "@/components/icons/Sun";
 import Moon from "@/components/icons/Moon";
 import themeToggleOn from "@/sounds/themeToggleOn.mp3";
 import themeToggleOff from "@/sounds/themeToggleOff.mp3";
-import { useStore } from "@/store/store";
+import { useSoundStore } from "@/store/useSoundStore";
 
-type Props = {};
-
-const ThemeToggle = (props: Props) => {
+const ThemeToggle = () => {
   const { setTheme } = useTheme();
-  const { isSound } = useStore();
+  const { isSound } = useSoundStore();
 
   const [playOn] = useSound(themeToggleOn, {
     volume: 1.5,
