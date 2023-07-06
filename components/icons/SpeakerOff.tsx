@@ -19,7 +19,7 @@ const SpeakerOff = (props: Props) => {
             C15.7086 5.10397 16.4984 7.01128 16.4984 9.00001
             C16.4984 10.9887 15.7086 12.8961 14.3025 14.3025
           "
-        className="fill-none stroke-main-iconDark dark:stroke-main-icon"
+        className="fill-none stroke-none"
       ></path>
       <path
         d="
@@ -27,7 +27,7 @@ const SpeakerOff = (props: Props) => {
             C12.358 7.04824 12.753 8.00189 12.753 8.99626
             C12.753 9.99063 12.358 10.9443 11.655 11.6475
           "
-        className="fill-none stroke-main-iconDark dark:stroke-main-icon"
+        className="fill-none stroke-none"
       ></path>
     </svg>
   );
