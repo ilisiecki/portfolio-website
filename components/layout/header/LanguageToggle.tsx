@@ -20,8 +20,10 @@ const LanguageToggle = () => {
   const pathname = usePathname().slice(0, 3);
   const { isSound } = useSoundStore();
 
-  if (pathname === "/pl") {
+  if (pathname === "/pl" && currentPathname.length > 3) {
     currentPathname = currentPathname.slice(3);
+  } else {
+    currentPathname = "/";
   }
 
   return (
