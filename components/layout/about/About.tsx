@@ -23,7 +23,7 @@ const skills = [
 const About = () => {
   const t = useTranslations("About");
   return (
-    <section id="about" className="mt-12 lg:mt-48">
+    <section id="about" className="mt-12">
       <div className="my-8">
         <h2 className="text-center text-4xl font-bold text-main-text dark:text-main-textDark">
           {t("title")}

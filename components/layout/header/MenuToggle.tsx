@@ -1,13 +1,20 @@
 "use client";
 
 import Link from "next/link";
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import {
+  Sheet,
+  SheetContent,
+  SheetTrigger,
+  SheetClose,
+  SheetHeader,
+} from "@/components/ui/sheet";
 import ThemeToggle from "./ThemeToggle";
 import SpeakerToggle from "./SpeakerToggle";
 import Github from "@/components/icons/Github";
 import LanguageToggle from "./LanguageToggle";
 import { useEffect, useState } from "react";
 import { useMediaQuery } from "usehooks-ts";
+import Hamburger from "@/components/icons/Hamburger";
 
 type Props = {
   NAV_ITEMS: Array<string>;
@@ -26,7 +33,10 @@ const MenuToggle = (props: Props) => {
   return (
     <div className="flex">
       <Sheet open={isOpen} onOpenChange={setIsOpen}>
-        <SheetTrigger>X</SheetTrigger>
+        <SheetTrigger className="text-8xl">
+          <Hamburger />
+        </SheetTrigger>
+
         <SheetContent
           position="top"
           size="full"

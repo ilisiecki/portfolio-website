@@ -16,15 +16,21 @@ import {
 const LanguageToggle = () => {
   const [play, { stop }] = useSound(clickOnMenu, { volume: 1 });
   const [isHovering, setIsHovering] = useState(false);
-  let currentPathname = usePathname();
-  const pathname = usePathname().slice(0, 3);
+  const internationalizationPathname = usePathname().slice(0, 3);
   const { isSound } = useSoundStore();
 
-  if (pathname === "/pl" && currentPathname.length > 3) {
-    currentPathname = currentPathname.slice(3);
-  } else {
-    currentPathname = "/";
-  }
+  const CreateRedirectPath = (internationalizationPathname: string) => {
+    let currentPathname = usePathname();
+    if (internationalizationPathname === "/pl" && currentPathname.length > 3) {
+      return (currentPathname = currentPathname.slice(3));
+    } else if (currentPathname.length > 3) {
+      return currentPathname;
+    } else {
+      return (currentPathname = "/");
+    }
+  };
+
+  const createdReditectPath = CreateRedirectPath(internationalizationPathname);
 
   return (
     <>
@@ -53,19 +59,19 @@ const LanguageToggle = () => {
         >
           <div
             className={`${
-              pathname === "/pl" ? "" : "font-black"
+              internationalizationPathname === "/pl" ? "" : "font-black"
             } flex w-full justify-center`}
           >
-            <LinkIntl href={currentPathname} locale="en">
+            <LinkIntl href={createdReditectPath} locale="en">
               en
             </LinkIntl>
           </div>
           <div
             className={`${
-              pathname === "/pl" ? "font-black" : ""
+              internationalizationPathname === "/pl" ? "font-black" : ""
             } flex w-full justify-center`}
           >
-            <LinkIntl href={currentPathname} locale="pl">
+            <LinkIntl href={createdReditectPath} locale="pl">
               pl
             </LinkIntl>
           </div>

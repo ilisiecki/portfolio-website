@@ -6,6 +6,7 @@ import SpeakerOff from "@/components/icons/SpeakerOff";
 import audioToggleOn from "@/sounds/audioToggleOn.mp3";
 import audioToggleOff from "@/sounds/audioToggleOff.mp3";
 import { useSoundStore } from "@/store/useSoundStore";
+import { StateStorage } from "zustand/middleware";
 import { useState, useEffect } from "react";
 
 const SpeakerToggle = () => {

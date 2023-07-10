@@ -5,7 +5,7 @@ const Work = () => {
   const t = useTranslations("Work");
 
   return (
-    <section id="work" className="mt-8">
+    <section id="work" className="mt-12">
       <div>
         <h2 className="text-center text-4xl font-bold text-main-text dark:text-main-textDark">
           {t("title")}
@@ -17,7 +17,7 @@ const Work = () => {
         description={t("description-1")}
         tools={["Next.Js", "Tailwind", "Zustand", "Framer", "Shadcn/ui"]}
         readMore={t("read-more")}
-        liveLink="https://github.com/ilisiecki/nextjs13.2-youtubue-ui"
+        liveLink="https://www.igorlisiecki.pl/pl"
         gitHubLink="https://github.com/ilisiecki/portfolio-website"
       />
       <Board
@@ -32,7 +32,7 @@ const Work = () => {
           "Headless Ui",
         ]}
         readMore={t("read-more")}
-        liveLink="https://github.com/ilisiecki/nextjs13.2-youtubue-ui"
+        liveLink="https://t3-easydict-fullstack.vercel.app/"
         gitHubLink="https://github.com/ilisiecki/t3-easydict-fullstack"
       />
       <Board

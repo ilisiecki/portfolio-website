@@ -19,12 +19,17 @@ const Header = () => {
   return (
     <header className="px-4 sm:px-8">
       <div className="mx-auto flex max-w-screen-lg justify-between py-4 md:pt-16">
-        <div className="flex gap-12 font-medium text-main-icon dark:text-main-iconDark">
-          <Link href="/">Igor Lisiecki - logo</Link>
+        <div className="flex items-center gap-12 font-medium text-main-icon dark:text-main-iconDark">
+          <Link
+            href="/"
+            className="flex text-3xl font-semibold tracking-tight text-main-text hover:text-main-iconHover dark:text-main-textDark dark:hover:text-main-iconHoverDark"
+          >
+            Igor Lisiecki
+          </Link>
           <div className="hidden gap-12 md:flex">
             <Link
               href="/about"
-              className="dark:hover:text-main-iconHoverDa hover:text-main-iconHover"
+              className="hover:text-main-iconHover dark:hover:text-main-iconHoverDark"
             >
               {t("about")}
             </Link>
@@ -36,7 +41,7 @@ const Header = () => {
             </Link>
             <Link
               href="/contact"
-              className="dark:hover:text-main-iconHoverDa hover:text-main-iconHover"
+              className="hover:text-main-iconHover dark:hover:text-main-iconHoverDark"
             >
               {t("contact")}
             </Link>
