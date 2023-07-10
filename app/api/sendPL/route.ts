@@ -8,7 +8,7 @@ export async function POST(request: Request) {
   const { username, email, message } = await request.json();
   try {
     const data = await resend.emails.send({
-      from: "info@service-mail.igorlisiecki.pl",
+      from: process.env.EMAIL_ADDRESS || "",
       to: email,
       subject: `Cześć ${username} 🌹,`,
       react: ThanksEmailPL({ username, message }),
