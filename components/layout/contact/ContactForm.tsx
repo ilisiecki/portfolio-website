@@ -153,8 +153,7 @@ const ContactForm = () => {
           </Button>
           {emailSent && (
             <div className="inline-flex p-4 text-xs text-main-text/60 dark:text-main-textDark/40">
-              Email has been sent successfully. Please check your email for
-              confirmation.
+              Email has been sent successfully. Please check your inbox.
             </div>
           )}
         </form>
