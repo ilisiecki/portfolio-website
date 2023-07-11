@@ -12,19 +12,19 @@
     "title": "Hi, I'm Igor!",
     "text-1": "I'm",
     "text-1-1": "Software Engineer",
-    "text-1-2": "and I",
-    "text-1-3": "love",
-    "text-1-4": "to create, develop and improve all kind of software",
-    "text-1-5": "and also myself"
+    "text-1-2": "who",
+    "text-1-3": "loves",
+    "text-1-4": "creating, developing and improving not only software",
+    "text-1-5": "but also myself"
   },
   "About": {
     "title": "About Me",
     "subtitle": "Get to know me!",
-    "subtitle-2": "Currently in relationship with:",
-    "text-1": "So..., as you should already know my name is Igor 😅. I graduated in Computer Engineering with bachelor degree at the University of Zielona Góra. Since that moment I was working and improving my skills in different sections of IT.",
-    "text-2": "I have working experience with the web development, software testing and also with graphics design. Currently I spend most of the time on creating front-end applications for other companies and on improving my skills and learning new technologies.",
-    "text-3": "I like to pay attention to the details and I'm always trying to do my job as best as I can. I prefere learning-by-doing theory. I'm responsible and precise. I like to have real impact on projects that I'm working on. I'm always open for new opportunities and experiences.",
-    "text-4": "Currently looking for a job with tech stack that I like the most. I care about getting experience and creating interesting projects. I will be happy to work as front-end or fullstack developer. I'm ready to temporary relocate if needed."
+    "subtitle-2": "Currently in relationship 💖 with:",
+    "text-1": "So..., as you already know my name is Igor 😅. I graduated in Computer Engineering with a bachelor degree from the University of Zielona Góra. Since then, I have been working and improving my skills in different sections of IT.",
+    "text-2": "I have work experience in web development, software testing and graphics design. Currently I spend most of the time on creating front-end applications for differen companies and on improving my skills and learning new technologies.",
+    "text-3": "I pay attention to detail and I always try to do my job the best I can. I prefere learning-by-doing theory. I'm responsible and precise. I like to have a real impact on the projects that I work on. I'm always open to new opportunities and experiences.",
+    "text-4": "Currently I'm looking for a job with the tech stack that I like the most. I care about getting experience and creating interesting projects. I will be happy to work as a front-end or full-stack developer. I'm ready to relocate if needed."
   },
   "Work": {
     "title": "Work",
@@ -32,9 +32,9 @@
     "title-board-2": "EasyDict fullstack app",
     "title-board-3": "YouTube front-end clone",
     "read-more": "Read more...",
-    "description-1": "I've created this app for myself as my portfolio website. I've used Next.Js with App Router, Zustand for client side state managment and Tailwind. I also used some fancy libraries like next-themes, next-intl, resend, create-email, use-sound, useMediaQuery from usehooks-ts and Framer Motion.",
-    "description-2": "In this app I wanted to test out popular tech stack T3, which is based on TypeScript and include Next.js with Page Routes, tRCP, Prisma, NextAuth and Tailwind. EasyDict App use also public Free Dictionary API, to get definitions of words. As database I've used PlanetScale which is based on MySQL. Authentication is based NextAuth and github provider ",
-    "description-3": "My goal for this app was to create front-end copy of YouTube application. I was trying to achieve not only same look but also re-create behavior of website and individual components. It was my first time when I was using Next.js with App Router which was in beta at that moment. I think App Router functionality changes a lot and I wanted to learn it and understand as soon as possible "
+    "description-1": "I've created this app for myself as my portfolio website. I used Next.Js with App Router, Zustand for state management and Tailwind. I also used some fancy libraries like next-themes, next-intl, resend, create-email, use-sound, useMediaQuery from usehooks-ts and Framer Motion.",
+    "description-2": "In this App I wanted to test out a popular tech stack T3, which is based on TypeScript and includes Next.js with Page Routes, tRCP, Prisma, NextAuth and Tailwind. The EasyDict uses the public free dictionary api to, to get the definitions of different words. For the database, I used PlanetScale which is based on MySQL. The authentication is based on NextAuth and the GitHub provider. ",
+    "description-3": "My goal for this app was to create a front-end copy of the YouTube application. I was trying to achieve not only the same look but also to re-create the behavior of website and its individual components. It was my first time using Next.js with the App Router which was still in beta at that moment. The App Router functionality changes a lot and I wanted to learn it and understand it as soon as possible "
   },
   "Contact": {
     "title": "Contact",

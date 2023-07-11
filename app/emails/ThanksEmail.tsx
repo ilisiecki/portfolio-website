@@ -55,8 +55,8 @@ export const ThanksEmail = ({
             <Section style={content}>
               <Text style={paragraph}>Hi {username} 🌹,</Text>
               <Text style={paragraph}>
-                I appreciate you reaching out with me. This is just confirm
-                messange and you don&apos;t have answer to it.
+                I appreciate you reaching out to me. This is just a confirmation
+                message and you don&apos;t have an answer to it.
               </Text>
               <Text style={paragraph}>
                 I will do my best to respond as soon as possible 🤗.
@@ -68,7 +68,7 @@ export const ThanksEmail = ({
               </Text>
 
               <Text style={paragraph}>
-                If you have any questions please send message on{" "}
+                If you have any questions please send a message on{" "}
                 <Link
                   href="igorlisiecki.pl/contact"
                   target="_blank"
