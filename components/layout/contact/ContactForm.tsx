@@ -80,7 +80,7 @@ const ContactForm = () => {
     setLoading(false);
 
     try {
-      await fetch("/api/sendToUserPL", {
+      await fetch("/api/sendToUser", {
         method: "POST",
         body: JSON.stringify({
           username: data.username,
