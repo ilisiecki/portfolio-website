@@ -31,7 +31,7 @@ export const MessageEmail = ({
   message,
   updatedDate = new Date(),
 }: MessageEmailProps) => {
-  const formattedDate = new Intl.DateTimeFormat("en", {
+  const formattedDate = new Intl.DateTimeFormat("de", {
     dateStyle: "medium",
     timeStyle: "medium",
   }).format(updatedDate);

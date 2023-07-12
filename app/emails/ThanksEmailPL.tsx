@@ -29,7 +29,7 @@ export const ThanksEmailPL = ({
   message,
   updatedDate = new Date(),
 }: WelcomeEmailProps) => {
-  const formattedDate = new Intl.DateTimeFormat("en", {
+  const formattedDate = new Intl.DateTimeFormat("de", {
     dateStyle: "medium",
     timeStyle: "medium",
   }).format(updatedDate);
