@@ -1,4 +1,4 @@
-import ThanksEmailPL from "@/app/emails/ThanksEmailPL";
+import ThanksEmail from "@/app/emails/ThanksEmail";
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
 
@@ -8,10 +8,10 @@ export async function POST(request: Request) {
   const { username, email, message } = await request.json();
   try {
     const data = await resend.emails.send({
-      from: process.env.EMAIL_SEND_ADDRESS || "",
+      from: "IgorLisiecki.pl <" + process.env.EMAIL_SEND_ADDRESS + ">",
       to: email,
-      subject: `Cześć ${username} 🌹,`,
-      react: ThanksEmailPL({ username, message }),
+      subject: `Hi ${username} 🌹,`,
+      react: ThanksEmail({ username, message }),
     });
 
     return NextResponse.json(data);

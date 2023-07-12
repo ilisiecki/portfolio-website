@@ -55,7 +55,7 @@ const ContactForm = () => {
     const toastLoadingId = toast.loading("Sending email...");
 
     try {
-      await fetch("/api/send", {
+      await fetch("/api/sendToOwner", {
         method: "POST",
         body: JSON.stringify({
           username: data.username,
@@ -68,7 +68,6 @@ const ContactForm = () => {
         id: toastLoadingId,
         duration: 3500,
       });
-
       form.reset();
     } catch (error) {
       console.error("Failed to send email: ", error);
@@ -79,6 +78,23 @@ const ContactForm = () => {
     }
 
     setLoading(false);
+
+    try {
+      await fetch("/api/sendToUserPL", {
+        method: "POST",
+        body: JSON.stringify({
+          username: data.username,
+          email: data.email.toLowerCase(),
+          message: data.message,
+        }),
+      });
+    } catch (error) {
+      console.error("Failed to send email: ", error);
+      toast.error("Sent email error", {
+        id: toastLoadingId,
+        duration: 3500,
+      });
+    }
   }
 
   return (
