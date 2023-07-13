@@ -7,7 +7,7 @@
 I've created this app for myself as my portfolio website. I've used Next.Js with App Router, Zustand for client side state management and Tailwind. I also used some fancy libraries like next-themes, next-intl, resend, create-email, use-sound, useMediaQuery from usehooks-ts and Framer Motion.
 The website is responsive and users have the ability to switch to dark mode, turn off sounds of the website and change the language of it. I tried to maintain good practices like creating reusable components and icons and carefully designing the file structure. The contact form has validation on each field. The website sends a confirmation email to the user and an email to the website owner with the content of the user’s message The emails are built with html elements to look more professional than just plain text.
 
-I plan to continually work on improving this website in the future/ I have a lot of ideas on how to improve this website in the future
+I plan to continually work on improving this website. I have a lot of ideas on how to improve this website in the future
 
 ## Tech Stack
 
