@@ -1,6 +1,6 @@
-import Image from "next/image";
 import { useTranslations } from "next-intl";
 import ScrollDown from "../ScrollDown";
+import ImageParallax from "./ImageParallax";
 
 const Hero = () => {
   const t = useTranslations("Hero");
@@ -20,13 +20,7 @@ const Hero = () => {
           </p>
         </div>
         <div className="flex items-center justify-center">
-          <Image
-            className="relative z-30 w-[20rem] drop-shadow-2xl sm:w-[20rem] md:w-[25rem] lg:w-[35rem]"
-            src="/images/fox.webp"
-            alt="Picture of me as a fox"
-            width={500}
-            height={450}
-          />
+          <ImageParallax />
           <div className="gradient-for-logo absolute -z-10 h-72 w-72 rounded-full blur-[80px] md:h-[25rem] md:w-[25rem] lg:h-[35rem] lg:w-[35rem]"></div>
         </div>
       </div>

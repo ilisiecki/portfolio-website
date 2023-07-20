@@ -6,7 +6,6 @@ import SpeakerOff from "@/components/icons/SpeakerOff";
 import audioToggleOn from "@/sounds/audioToggleOn.mp3";
 import audioToggleOff from "@/sounds/audioToggleOff.mp3";
 import { useSoundStore } from "@/store/useSoundStore";
-import { StateStorage } from "zustand/middleware";
 import { useState, useEffect } from "react";
 
 const SpeakerToggle = () => {
@@ -33,7 +32,10 @@ const SpeakerToggle = () => {
         }}
         className={`${soundState ? `` : `hidden`}`}
       >
-        <SpeakerOn className="group h-6 w-6 fill-main-icon hover:fill-main-iconHover dark:fill-main-iconDark dark:hover:fill-main-iconHoverDark" />
+        <SpeakerOn
+          isSound={soundState}
+          className="group h-6 w-6 fill-main-icon hover:fill-main-iconHover dark:fill-main-iconDark dark:hover:fill-main-iconHoverDark"
+        />
       </button>
       <button
         onClick={() => {
@@ -41,7 +43,10 @@ const SpeakerToggle = () => {
         }}
         className={`${soundState ? "hidden" : ""}`}
       >
-        <SpeakerOff className="h-6 w-6 fill-main-icon hover:fill-main-iconHover dark:fill-main-iconDark dark:hover:fill-main-iconHoverDark" />
+        <SpeakerOff
+          isSound={soundState}
+          className="h-6 w-6 fill-main-icon hover:fill-main-iconHover dark:fill-main-iconDark dark:hover:fill-main-iconHoverDark"
+        />
       </button>
     </>
   );

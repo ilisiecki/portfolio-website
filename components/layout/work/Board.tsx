@@ -1,4 +1,5 @@
 import Link from "@/components/icons/Link";
+import Tools from "./Tools";
 
 type Props = {
   title: string;
@@ -38,18 +39,7 @@ const Board = (props: Props) => {
           {props.readMore}
         </a>
       </div>
-      <div className="mb-4 grid grid-cols-2 gap-4 md:ml-8 md:flex md:flex-row">
-        {props.tools.map((item, idx) => {
-          return (
-            <div
-              key={idx}
-              className="flex cursor-default justify-center rounded bg-main-secondary/90 px-4 py-2 font-semibold text-main-text hover:bg-main-primary/80 dark:bg-main-secondary/70 dark:text-main-textDark dark:hover:bg-main-primary/80"
-            >
-              {item}
-            </div>
-          );
-        })}
-      </div>
+      <Tools tools={props.tools} />
     </div>
   );
 };
