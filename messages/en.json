@@ -30,11 +30,11 @@
   "Work": {
     "title": "Work",
     "title-board-1": "My Personal Website",
-    "title-board-2": "EasyDict fullstack app",
+    "title-board-2": "Allin Ai fullstack app",
     "title-board-3": "YouTube front-end clone",
     "read-more": "Read more...",
-    "description-1": "I've created this app for myself as my portfolio website. I used Next.Js with App Router, Zustand for state management and Tailwind. I also used some fancy libraries like next-themes, next-intl, resend, create-email, use-sound, useMediaQuery from usehooks-ts and Framer Motion.",
-    "description-2": "In this App I wanted to test out a popular tech stack T3, which is based on TypeScript and includes Next.js with Page Routes, tRCP, Prisma, NextAuth and Tailwind. The EasyDict uses the public free dictionary api to, to get the definitions of different words. For the database, I used PlanetScale which is based on MySQL. The authentication is based on NextAuth and the GitHub provider. ",
+    "description-1": "I've created this app for myself as my portfolio website. I used Next.Js with App Router, Zustand for state management and Tailwind. I also used some fancy libraries like next-themes, next-intl, resend, create-email, use-sound, useMediaQuery from usehooks-ts and Framer Motion ",
+    "description-2": "This App is my take on a web service with Ai tools. The app uses the public but limited free version of OpenAi API and Replicate API to generate: text, code, image, music and video. The app offers a free tier where the users are allowed to generate 5 different items. The users also have an option to upgrade to a pro version of the app which allows them to generate an unlimited amount of items ",
     "description-3": "My goal for this app was to create a front-end copy of the YouTube application. I was trying to achieve not only the same look but also to re-create the behavior of website and its individual components. It was my first time using Next.js with the App Router which was still in beta at that moment. The App Router functionality changes a lot and I wanted to learn it and understand it as soon as possible "
   },
   "Contact": {

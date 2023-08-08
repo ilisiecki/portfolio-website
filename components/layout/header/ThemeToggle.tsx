@@ -24,7 +24,7 @@ const ThemeToggle = () => {
 
   useEffect(() => {
     setMounted(true);
-  }, []);
+  }, [setTheme]);
 
   if (!mounted) {
     return null;

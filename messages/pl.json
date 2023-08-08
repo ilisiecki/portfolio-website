@@ -30,11 +30,11 @@
   "Work": {
     "title": "Projekty",
     "title-board-1": "Moja prywatna strona",
-    "title-board-2": "Aplikacja fullstack EasyDict",
+    "title-board-2": "Aplikacja Allin Ai fullstack",
     "title-board-3": "YouTube front-end klon",
     "read-more": "Czytaj więcej...",
     "description-1": "Tę aplikację stworzyłem dla siebie jako stronę portfolio. Wykorzystałem do tego celu Next.Js z App Router oraz Tailwind. Wykorzystałem również kilka ciekawych bibliotek tj. next-themes, next-intl, resend, create-email, use-sound, useMediaQuery z usehooks-ts, shadcn/ui oraz Framer Motion ",
-    "description-2": "Tworząc tę aplikację chciałem przetestować popularny stack T3, który opiera się na TypeScript i zawiera Next.js oparte na Page Routes, tRCP, Prisma, NextAuth i Tailwind. Aplikacja EasyDict wykorzystuje publicze Free Dictionary API, aby wyświetlić definicje słów. Jako bazy danych użyłem PlanetScale opartego na MySQL. Uwierzytelnienie jest wykonane za pomocą serwisu github oraz NextAuth ",
+    "description-2": "Aplikacja ta to serwis internetowy z narzędziami Ai. Aplikacja wykorzystuje publiczne ale ograniczone darmowe wersje APi takie jak OpenAi oraz Replicate, do tworzenia tekstu, kodu, obrazów, muzyki oraz wideo. Aplikacja oferuje darmowy dostęp, który pozwala wygenerować użytkownikowi 5 różnych rzeczy. Użytkownicy mają możliwość przejścia na wersję pro, która pozwala na generowanie rzeczy bez limitu ",
     "description-3": "Celem tej aplikacji było odtworzenie aplikacji YouTube. Starałem się odwzorować nie tylko taki sam wygląd, ale też odtworzyć jak strona i jej poszczególne elementy funkcjonują. To był mój pierwszy projekt z wykorzystaniem Next.js z App Router, który był jeszcze w wersji beta w tym momencie. Uważam, że funkcjonalność App Router zmienia naprawdę sporo i chciałem jak najszybciej ją zrozumieć "
   },
   "Contact": {

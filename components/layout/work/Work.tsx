@@ -23,17 +23,10 @@ const Work = () => {
       <Board
         title={t("title-board-2")}
         description={t("description-2")}
-        tools={[
-          "Next.Js",
-          "tRCP",
-          "Prisma",
-          "NextAuth",
-          "Tailwind",
-          "Headless Ui",
-        ]}
+        tools={["Next.Js", "Clerk", "Prisma", "Tailwind", "Zustand", "Stripe"]}
         readMore={t("read-more")}
-        liveLink="https://t3-easydict-fullstack.vercel.app/"
-        gitHubLink="https://github.com/ilisiecki/t3-easydict-fullstack"
+        liveLink="https://allin-ai-puce.vercel.app/"
+        gitHubLink="https://github.com/ilisiecki/allin-ai"
       />
       <Board
         title={t("title-board-3")}
