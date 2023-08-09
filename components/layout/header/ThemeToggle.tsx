@@ -10,9 +10,12 @@ import { useSoundStore } from "@/store/useSoundStore";
 import { useState, useEffect } from "react";
 
 const ThemeToggle = () => {
-  const { theme, setTheme } = useTheme();
+  const { systemTheme, theme, setTheme } = useTheme();
   const { isSound } = useSoundStore();
   const [mounted, setMounted] = useState(false);
+
+  const currentTheme = theme === "system" ? systemTheme : theme;
+  currentTheme ? setTheme(currentTheme) : "";
 
   const [playOn] = useSound(themeToggleOn, {
     volume: 1.5,
@@ -24,7 +27,7 @@ const ThemeToggle = () => {
 
   useEffect(() => {
     setMounted(true);
-  }, [setTheme]);
+  }, []);
 
   if (!mounted) {
     return null;
